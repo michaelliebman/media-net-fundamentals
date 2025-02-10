@@ -1,0 +1,34 @@
+  repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: detect-private-key
+      - id: no-commit-to-branch
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.18.0
+    hooks:
+      - id: commitlint
+        stages: [commit-msg]
+        additional_dependencies: ["@commitlint/config-conventional"]
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v8.13.3
+    hooks:
+      - id: cspell
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.42.0
+    hooks:
+      - id: markdownlint
+  - repo: https://github.com/sirosen/texthooks
+    rev: 0.6.7
+    hooks:
+      - id: fix-smartquotes
+      - id: fix-ligatures
+      - id: fix-spaces

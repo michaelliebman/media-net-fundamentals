@@ -1,0 +1,55 @@
+name: Build Slides
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  pre-commit:
+    name: Run pre-commit
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - uses: pre-commit/action@v3.0.1
+  convert_via_pandoc:
+    name: Convert via pandoc
+    needs: pre-commit
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 21
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - uses: r-lib/actions/setup-pandoc@v2
+        with:
+          pandoc-version: 3.1.11
+      - run: |
+          pandoc --citeproc \
+            --filter=node_modules/.bin/mermaid-filter \
+            --from=markdown+yaml_metadata_block+emoji \
+            --slide-level=3 \
+            ./media-net-fundamentals.md \
+            -o ./media-net-fundamentals.pptx
+      - run: |
+          pandoc --citeproc \
+            --filter=node_modules/.bin/mermaid-filter \
+            --from=markdown+yaml_metadata_block+emoji \
+            --slide-level=3 \
+            -t revealjs \
+            --standalone \
+            --embed-resources \
+            -V revealjs-url=https://unpkg.com/reveal.js/ \
+            ./media-net-fundamentals.md \
+            -o ./media-net-fundamentals.pptx
+      - name: Breakpoint if tests failed
+        if: failure()
+        uses: namespacelabs/breakpoint-action@v0
+        with:
+          duration: 30m
+          authorized-users: michaelliebman
