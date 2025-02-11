@@ -18,10 +18,6 @@
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
-  - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.13.3
-    hooks:
-      - id: cspell
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.42.0
     hooks:
@@ -32,3 +28,12 @@
       - id: fix-smartquotes
       - id: fix-ligatures
       - id: fix-spaces
+  - repo: https://github.com/errata-ai/vale
+    rev: v3.9.5
+    hooks:
+      - id: vale
+        name: vale sync
+        pass_filenames: false
+        args: [sync]
+      - id: vale
+        args: [--output=line, --minAlertLevel=error]
