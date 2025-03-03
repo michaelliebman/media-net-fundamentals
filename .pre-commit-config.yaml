@@ -30,7 +30,7 @@
       - id: fix-ligatures
       - id: fix-spaces
   - repo: https://github.com/errata-ai/vale
-    rev: v3.9.5
+    rev: v3.9.6
     hooks:
       - id: vale
         name: vale sync
