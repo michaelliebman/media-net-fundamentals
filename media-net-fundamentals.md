@@ -62,6 +62,21 @@ flowchart LR
 
 ### Physical Layer
 
+* Copper
+  * 1, 2.5, 5, & 10 Gbit
+  * Higher bit rate = higher CAT cable
+  * Higher bit rate = higher termination quality
+* Fiber
+  * 10, 25, 40, 100 Gbit and up
+  * Select optics and cable carefully
+  *
+
+::: notes
+
+25 and 40 Gbit copper standardize, but not marketed.
+
+:::
+
 ### Logical Link/Network Access
 
 ### Network/Internet
