@@ -1,0 +1,4 @@
+Mellanox
+[uU]nicast(?:s)?
+
+[kMGTPEZYRQ]bit
