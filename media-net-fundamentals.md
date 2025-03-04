@@ -101,6 +101,17 @@ flowchart LR
 
 ### Documentation
 
+* Use the right tool for the job
+* Use DCIM & IPAM like [NetBox](https://netbox.dev/)
+* Use a consistent, straightforward visual language like the
+  [C4 Model](https://c4model.com/)
+
+::: notes
+
+Spreadsheets aren't databases.
+
+:::
+
 ### Define Requirements
 
 ### Compare Options
