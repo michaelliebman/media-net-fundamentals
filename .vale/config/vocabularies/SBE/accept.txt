@@ -1,3 +1,4 @@
+[hH]itless
 Mellanox
 [uU]nicast(?:s)?
 
