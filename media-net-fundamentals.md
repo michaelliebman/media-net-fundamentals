@@ -23,6 +23,11 @@ monofont: Fira Code
 
 ### What is an MoIP network?
 
+* A group or system of interconnected things
+* Packet switched
+* Used internally, B2B, B2C/D2C, ad-hoc
+* Uses Internet Protocol
+
 ### The Protocol Stack
 
 ``` {.mermaid width=1600}
@@ -82,6 +87,12 @@ flowchart LR
 ### Network/Internet
 
 ### Transport
+
+### DNS
+
+### DHCP
+
+### Firewalls & NAT
 
 ## MoIP Essentials
 
