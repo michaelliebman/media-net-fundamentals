@@ -25,6 +25,7 @@ monofont: Fira Code
 
 * A group or system of interconnected things
 * Packet switched
+* Probably wired
 * Used internally, B2B, B2C/D2C, ad-hoc
 * Uses Internet Protocol
 
