@@ -1,5 +1,6 @@
 [hH]itless
 Mellanox
+TLD(?:s)?
 [uU]nicast(?:s)?
 
 [kMGTPEZYRQ]bit

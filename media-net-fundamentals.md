@@ -91,6 +91,20 @@ flowchart LR
 
 ### DNS
 
+* Numbers are hard for people, names are better
+* Divided into **zones**
+* Authoritative name servers "own" a zone (SOA)
+* Root name servers resolve TLDs
+* Fully Qualified Domain Name (FQDN).
+
+### Record Types
+
+* **A/AAAA:** Name &#8594; IP Address
+* **PTR:** IP Address &#8594; Name; DNS-SD
+* **CNAME:** "Pretty" Name &#8594; "Real" Name
+* **SRV:** Service location
+* **TXT:** ~~Human~~ Machine-readable text
+
 ### DHCP
 
 ### Firewalls & NAT
