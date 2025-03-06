@@ -107,6 +107,23 @@ flowchart LR
 
 ### DHCP
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+* Automated IP stack configuration
+* Dynamic, automatic, & manual modes
+* Client requests a *lease*, automatically renews
+* Release & renew manually for troubleshooting
+* *Options* let you configure more than just address
+
+:::
+::: {.column width="50%"}
+
+![Do you have trouble using blankets?](images/snuggie.png)
+
+:::
+::::::::::::::
+
 ### Firewalls & NAT
 
 ## MoIP Essentials
