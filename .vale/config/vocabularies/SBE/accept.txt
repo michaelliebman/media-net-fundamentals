@@ -1,5 +1,6 @@
 [hH]itless
 Mellanox
+[mM]ulticast(?:s)?
 TLD(?:s)?
 [uU]nicast(?:s)?
 [uU]ntrusted
