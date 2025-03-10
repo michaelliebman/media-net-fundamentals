@@ -124,7 +124,35 @@ flowchart LR
 :::
 ::::::::::::::
 
-### Firewalls & NAT
+### Firewalls
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+* Monitors & controls incoming & outgoing network traffic
+* Often between trusted & untrusted networks
+* Packet filter/stateless, Connection tracking/stateful, application
+* DMZ allows select public connections to some hosts
+
+:::
+::: {.column width="50%"}
+
+![Don't be this station](https://i.imgflip.com/9msbiy.jpg)
+
+:::
+::::::::::::::
+
+::: notes
+
+<!-- vale proselint.But = NO -->
+Stateless firewalls aren't frequently used in modern systems.
+But you will see their mechanisms used for provide other network features.
+For example, extended Berkeley Packet Filters (eBPF) safely extends kernel functionality.
+<!-- vale proselint.But = YES -->
+
+:::
+
+### NAT
 
 ## MoIP Essentials
 

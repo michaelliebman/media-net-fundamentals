@@ -2,5 +2,6 @@
 Mellanox
 TLD(?:s)?
 [uU]nicast(?:s)?
+[uU]ntrusted
 
 [kMGTPEZYRQ]bit
