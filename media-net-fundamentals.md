@@ -189,7 +189,6 @@ Spreadsheets aren't databases.
 
 <!-- vale proselint.Very = NO -->
 <!-- vale write-good.Weasel = NO -->
-<!-- markdownlint-disable MD013 -->
 
 +----------------------+-------------------+-----------+-----------+----------------------------+
 |  *Feature*           | *OISM*            | *Layer 3* | *SDN*     | *Layer 2*                  |
@@ -219,7 +218,6 @@ Spreadsheets aren't databases.
 
 <!-- vale proselint.Very = YES -->
 <!-- vale write-good.Weasel = YES -->
-<!-- markdownlint-enable MD013 -->
 
 ::: notes
 
