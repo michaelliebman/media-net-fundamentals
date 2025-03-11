@@ -6,13 +6,15 @@ date: April 4, 2025
 monofont: Fira Code
 ---
 
-### What are we going to cover?
+### Topics
+
+#### What are we going to cover?
 
 * The Fundamentals
 * MoIP Essentials
 * Architecture Guidance
 
-### What *aren't* we going to cover?
+#### What *aren't* we going to cover?
 
 * Cisco, Arista, Mellanox, &lt;*insert switch vendor here*&gt; configuration
 * Step-by-step for *your* network
