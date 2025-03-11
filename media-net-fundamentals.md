@@ -66,6 +66,13 @@ flowchart LR
   class OSI,tcp note
 ```
 
+::: notes
+
+Physical is not technically part of the TCP/IP model.
+LL/Network Access handles hop to hop delivery.
+Network/Internet handles end to end delivery.
+Transport handles service to service delivery.
+
 ### Physical Layer
 
 * Copper
