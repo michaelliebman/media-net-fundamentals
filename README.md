@@ -3,7 +3,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-<!-- vale Vale.Spelling["pandoc", "subnetting"] = NO -->
+<!-- vale Vale.Spelling["pandoc"] = NO -->
 
 Use pandoc to convert to PowerPoint.
 

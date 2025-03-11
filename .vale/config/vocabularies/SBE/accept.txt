@@ -1,6 +1,7 @@
 [hH]itless
 Mellanox
 [mM]ulticast(?:s)?
+[sS]ubnet(?:ting|s)?
 TLD(?:s)?
 [uU]nicast(?:s)?
 [uU]ntrusted
