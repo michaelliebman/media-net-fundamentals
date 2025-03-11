@@ -139,3 +139,6 @@ dist
 .vale/alex
 .vale/proselint
 .vale/write-good
+
+# LibreOffice
+.~lock.*#
