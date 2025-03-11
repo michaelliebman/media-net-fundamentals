@@ -73,6 +73,8 @@ LL/Network Access handles hop to hop delivery.
 Network/Internet handles end to end delivery.
 Transport handles service to service delivery.
 
+:::
+
 ### Physical Layer
 
 * Copper
@@ -92,7 +94,12 @@ Transport handles service to service delivery.
 
 ### Logical Link/Network Access
 
+* Frames
+*
+
 ### Network/Internet
+
+* Packets
 
 ### Subnets
 
@@ -116,6 +123,8 @@ Transport handles service to service delivery.
 +-----------------+---------------------------------------+---------------+---------------------------------------+-----------------+
 
 ### Transport
+
+* Segments
 
 ### DNS
 
