@@ -33,6 +33,8 @@ monofont: Fira Code
 
 ### The Protocol Stack
 
+<!-- mermaid renders this slightly wonky -->
+<!--
 ``` {.mermaid width=1600}
 flowchart LR
   classDef sub opacity:0
@@ -67,6 +69,8 @@ flowchart LR
   class notes sub
   class OSI,tcp note
 ```
+-->
+![ ](images/layers.png)
 
 ::: notes
 
