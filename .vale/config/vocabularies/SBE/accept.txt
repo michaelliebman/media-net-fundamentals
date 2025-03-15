@@ -1,3 +1,4 @@
+Bakni
 [hH]itless
 Mellanox
 [mM]ulticast(?:s)?
@@ -5,5 +6,7 @@ Mellanox
 TLD(?:s)?
 [uU]nicast(?:s)?
 [uU]ntrusted
+Wikimedia
+Wikipedia
 
 [kMGTPEZYRQ]bit
