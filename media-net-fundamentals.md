@@ -197,15 +197,24 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 
 ### NAT
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 * A way to map one address space into another
 * Often RFC1918 to/from public
 * Basic/one-to-one: Just rewrite addresses
 * One-to-many: Rewrite addresses and port numbers
 * Watch out for CGNAT and double NAT
 
+:::
+::: {.column width="50%"}
+
 ![Network address translation between a private network and the Internet[^credit-nat]](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/NAT_Concept-en.svg/1280px-NAT_Concept-en.svg.png)
 
 [^credit-nat]: Michel Bakni, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
+
+:::
+::::::::::::::
 
 ## MoIP Essentials
 
