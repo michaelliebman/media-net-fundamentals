@@ -220,6 +220,25 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 
 ### ST 2110 in 60 Seconds
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+* Real-time Transport Protocol (RTP) carries essence
+  * UDP
+  * Multicast
+* Session Description Protocol (SDP) describes essence
+* Precision Time Protocol (PTPv2) synchronizes essence
+* Every essence is a separate flow
+* Leaky bucket model for buffers
+
+:::
+::: {.column width="50%"}
+
+![A basic ST 2110 network](images/2110.png)
+
+:::
+::::::::::::::
+
 <!-- vale write-good.Passive = NO -->
 ### Roses Are Red, Redundant Paths Are Blue
 <!-- vale write-good.Passive = YES -->
