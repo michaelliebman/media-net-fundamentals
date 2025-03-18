@@ -209,7 +209,7 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 :::
 ::: {.column width="50%"}
 
-![Network address translation between a private network and the Internet[^credit-nat]](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/NAT_Concept-en.svg/1280px-NAT_Concept-en.svg.png)
+![Network address translation between a private network and the Internet[^credit-nat]](https://upload.wikimedia.org/wikipedia/commons/c/c7/NAT_Concept-en.svg)
 
 [^credit-nat]: Michel Bakni, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
 
