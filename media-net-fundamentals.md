@@ -301,7 +301,7 @@ BiRel(spine1, tor2, "")
 BiRel(spine2, tor2, "")
 BiRel(spine1, tor3, "")
 BiRel(spine2, tor3, "")
-@endum
+@enduml
 ```
 
 :::
