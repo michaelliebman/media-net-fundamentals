@@ -291,16 +291,16 @@ LAYOUT_TOP_DOWN()
 
 System(spine1, "Spine 1", $sprite=layer_3_switch)
 System(spine2, "Spine 2", $sprite=layer_3_switch)
-System(tor1, "TOR Switch", $sprite=layer_3_switch)
-System(tor2, "TOR Switch", $sprite=layer_3_switch)
-System(tor3, "TOR Switch", $sprite=layer_3_switch)
+System(leaf1, "Leaf 1", $sprite=layer_3_switch)
+System(leaf2, "Leaf 2", $sprite=layer_3_switch)
+System(leaf3, "Leaf 3", $sprite=layer_3_switch)
 
-BiRel(spine1, tor1, "")
-BiRel(spine2, tor1, "")
-BiRel(spine1, tor2, "")
-BiRel(spine2, tor2, "")
-BiRel(spine1, tor3, "")
-BiRel(spine2, tor3, "")
+BiRel(spine1, leaf1, "")
+BiRel(spine2, leaf1, "")
+BiRel(spine1, leaf2, "")
+BiRel(spine2, leaf2, "")
+BiRel(spine1, leaf3, "")
+BiRel(spine2, leaf3, "")
 @enduml
 ```
 
