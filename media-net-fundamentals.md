@@ -106,6 +106,7 @@ Transport handles service to service delivery.
 ### Network/Internet
 
 * Packets
+* RFC 1918
 
 ### Subnets
 
@@ -235,6 +236,73 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 ::: {.column width="50%"}
 
 ![A basic ST 2110 network](images/2110.png)
+
+:::
+::::::::::::::
+
+### Network Architectures
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+#### Multi Tier
+
+```
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+UpdateElementStyle("system", $bgColor=white, $fontColor=#0069c6, $borderColor=white)
+UpdateRelStyle(black, black)
+
+HIDE_STEREOTYPE()
+LAYOUT_TOP_DOWN()
+
+System(core, "Core Switch", $sprite=layer_3_switch)
+System(distr1, "Distribution Switch", $sprite=layer_3_switch)
+System(distr2, "Distribution Switch", $sprite=layer_3_switch)
+System(acc1, "Access/TOR Switch", $sprite=workgroup_switch)
+System(acc2, "Access/TOR Switch", $sprite=workgroup_switch)
+
+BiRel(core, distr1, "")
+BiRel(core, distr2, "")
+BiRel(distr1, acc1, "")
+BiRel(distr2, acc2, "")
+@enduml
+```
+
+:::
+::: {.column width="50%"}
+
+#### Spine-Leaf
+
+```
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+UpdateElementStyle("system", $bgColor=white, $fontColor=#0069c6, $borderColor=white)
+UpdateRelStyle(black, black)
+
+HIDE_STEREOTYPE()
+LAYOUT_TOP_DOWN()
+
+System(spine1, "Spine 1", $sprite=layer_3_switch)
+System(spine2, "Spine 2", $sprite=layer_3_switch)
+System(tor1, "TOR Switch", $sprite=layer_3_switch)
+System(tor2, "TOR Switch", $sprite=layer_3_switch)
+System(tor3, "TOR Switch", $sprite=layer_3_switch)
+
+BiRel(spine1, tor1, "")
+BiRel(spine2, tor1, "")
+BiRel(spine1, tor2, "")
+BiRel(spine2, tor2, "")
+BiRel(spine1, tor3, "")
+BiRel(spine2, tor3, "")
+@endum
+```
 
 :::
 ::::::::::::::
