@@ -247,7 +247,7 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 
 #### Multi Tier
 
-```
+```{.plantuml}
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
@@ -277,7 +277,7 @@ BiRel(distr2, acc2, "")
 
 #### Spine-Leaf
 
-```
+```{.plantuml}
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
