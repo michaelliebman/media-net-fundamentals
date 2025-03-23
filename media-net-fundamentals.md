@@ -311,6 +311,89 @@ BiRel(spine2, leaf3, "")
 ### Roses Are Red, Redundant Paths Are Blue
 <!-- vale write-good.Passive = YES -->
 
+```{.plantuml}
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/font-awesome-6/video.puml
+!include $ICONURL/font-awesome-6/microphone.puml
+!include $ICONURL/font-awesome-6/tv.puml
+
+UpdateElementStyle("system", $bgColor=white, $fontColor=#ffbd24, $borderColor=white)
+UpdateRelStyle(black, black)
+AddElementTag("red", $fontColor=red)
+AddElementTag("blue", $fontColor=blue)
+AddElementTag("purple", $fontColor=purple)
+AddRelTag("red", $lineColor=red)
+AddRelTag("blue", $lineColor=blue)
+AddRelTag("purple", $lineColor=purple)
+
+HIDE_STEREOTYPE()
+LAYOUT_TOP_DOWN()
+
+System(rspine1, "", $sprite=layer_3_switch, $tags="red")
+System(rspine2, "", $sprite=layer_3_switch, $tags="red")
+System(rleaf1, "", $sprite=layer_3_switch, $tags="red")
+System(rleaf2, "", $sprite=layer_3_switch, $tags="red")
+System(rleaf3, "", $sprite=layer_3_switch, $tags="red")
+
+System(bspine1, "", $sprite=layer_3_switch, $tags="blue")
+System(bspine2, "", $sprite=layer_3_switch, $tags="blue")
+System(bleaf1, "", $sprite=layer_3_switch, $tags="blue")
+System(bleaf2, "", $sprite=layer_3_switch, $tags="blue")
+System(bleaf3, "", $sprite=layer_3_switch, $tags="blue")
+
+System(pleaf1, "", $sprite=layer_3_switch, $tags="purple")
+
+System(camera, "", $sprite=video)
+System(mic, "", $sprite=microphone)
+System(tv, "", $sprite=tv)
+
+Lay_R(rspine1, rspine2)
+Lay_R(rspine2, bspine1)
+Lay_R(bspine1, bspine2)
+Lay_R(rleaf1, rleaf2)
+Lay_R(rleaf2, rleaf3)
+Lay_R(rleaf3, pleaf1)
+Lay_R(pleaf1, bleaf1)
+Lay_R(bleaf1, bleaf2)
+Lay_R(bleaf2, bleaf3)
+Lay_D(mic, camera)
+Lay_D(mic, tv)
+BiRel(rspine1, rleaf1, "", $tags="red")
+BiRel(rspine2, rleaf1, "", $tags="red")
+BiRel(rspine1, rleaf2, "", $tags="red")
+BiRel(rspine2, rleaf2, "", $tags="red")
+BiRel(rspine1, rleaf3, "", $tags="red")
+BiRel(rspine2, rleaf3, "", $tags="red")
+
+BiRel(bspine1, bleaf1, "", $tags="blue")
+BiRel(bspine2, bleaf1, "", $tags="blue")
+BiRel(bspine1, bleaf2, "", $tags="blue")
+BiRel(bspine2, bleaf2, "", $tags="blue")
+BiRel(bspine1, bleaf3, "", $tags="blue")
+BiRel(bspine2, bleaf3, "", $tags="blue")
+
+BiRel(rspine1, pleaf1, "", $tags="purple")
+BiRel(rspine2, pleaf1, "", $tags="purple")
+BiRel(bspine1, pleaf1, "", $tags="purple")
+BiRel(bspine2, pleaf1, "", $tags="purple")
+
+Rel_U(camera, rleaf1, "", $tags="red")
+Rel_U(camera, bleaf1, "", $tags="blue")
+
+Rel_U(mic, pleaf1, "", $tags="purple")
+
+Rel(rleaf2, tv, "", $tags="red")
+Rel(bleaf2, tv, "", $tags="blue")
+
+@enduml
+```
+
 ### VLAN & VXLAN
 
 ### IGMP
