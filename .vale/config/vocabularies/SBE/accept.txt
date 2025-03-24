@@ -1,4 +1,5 @@
 Bakni
+[dD]atagram
 [hH]itless
 Mellanox
 [mM]ulticast(?:s)?

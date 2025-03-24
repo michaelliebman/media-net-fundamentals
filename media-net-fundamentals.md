@@ -131,7 +131,54 @@ Transport handles service to service delivery.
 
 ### Transport
 
+:::::::::::::: {.columns}
+::: {.column width="80%"}
+
 * Segments
+* Logical communication between processes
+* *Your* letter carrier
+* Identified by port numbers
+  * 1-1023: "Well known" services
+  * 1024-65535: Everything else
+* Transmission Control Protocol (TCP)
+  * Connection-oriented
+  * Error checking
+  * Reliable delivery
+  * Congestion control
+  * Three way handshake (SYN, SYN+ACK, ACK)
+  * Ordered
+  * Slow
+* User Datagram Protocol (UDP)
+  * Connectionless
+  * Error checking
+  * Atomic
+  * Only identified by destination IP + Port
+
+:::
+::: {.column width="20%"}
+
+```{.plantuml}
+@startuml
+!pragma teoz true
+
+group TCP
+  autonumber
+  Client ->(20) Server: SYN
+  Server ->(20) Client: SYN + ACK
+  Client ->(20) Server: ACK
+  autonumber stop
+end
+
+group UDP
+  Client ->(20) Server: Data
+  Server -->(20) Client: Response?
+end
+
+@enduml
+```
+
+:::
+::::::::::::::
 
 ### DNS
 
@@ -416,6 +463,9 @@ Spreadsheets aren't databases.
 :::
 
 ### Define Requirements
+
+* Hitless means different things to different people
+* Increased redundancy reduces reliability
 
 ### Compare Options
 
