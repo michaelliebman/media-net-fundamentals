@@ -152,6 +152,7 @@ Transport handles service to service delivery.
   * Connectionless
   * Error checking
   * Atomic
+  * Lower overhead (smaller header)
   * Only identified by destination IP + Port
 
 :::
