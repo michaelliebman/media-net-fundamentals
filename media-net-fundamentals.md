@@ -33,44 +33,62 @@ monofont: Fira Code
 
 ### The Protocol Stack
 
-<!-- mermaid renders this slightly wonky -->
-<!--
-``` {.mermaid width=1600}
-flowchart LR
-  classDef sub opacity:0
-  classDef note fill:#fff, stroke:#fff, font-size:24pt
+```{.plantuml width=1600}
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
-  subgraph notes [" "]
-    OSI
-    tcp(TCP/IP)
-  end
-  subgraph Check the Application
-    direction TB
-    Application --- Presentation --- Session
-    app2[Application]
-  end
-  OSI -.-> Application
-  tcp  -.-> app2
-  Session --- Transport
-  app2 --- trans2[Transport]
-  app2 ~~~ Session
-  subgraph Check the Protocol Stack
-    direction TB
-    Transport --- Network --- ll(Logical Link)
-    trans2 --- Internet
-    Internet --- na(Network Access)
-  end
-  ll --- Physical
-  na --- phys2[Physical*]
-  subgraph Check the Cable/NIC
-    Physical
-    phys2
-  end
-  class notes sub
-  class OSI,tcp note
+HIDE_STEREOTYPE()
+LAYOUT_LEFT_RIGHT()
+
+UpdateElementStyle("system", $bgColor=#ffbd24, $fontColor=black)
+UpdateBoundaryStyle("", $bgColor=#0069c6, $fontColor=white, $borderThickness=0)
+UpdateRelStyle(black, black)
+AddSystemTag("label", $bgColor=white, $fontColor=black, $borderThickness=0, $borderColor=white)
+AddRelTag("label", $lineStyle=DottedLine())
+
+System(osi, "OSI", $tags="label")
+System(tcp, "TCP/IP", $tags="label")
+
+Boundary(app, "Check the Application"){
+  System(oapp, "Application")
+  System(opres, "Presentation")
+  System(osess, "Session")
+
+  System(tapp, "Application")
+}
+
+Boundary(stack, "Check the Protocol Stack"){
+  System(otrans, "Transport")
+  System(onet, "Network")
+  System(oll, "Logical Link")
+  System(ttrans, "Transport")
+  System(tinet, "Internet")
+  System(tna, "Network Access")
+}
+
+Boundary(cable, "Check the Cable"){
+  System(phy, "Physical")
+}
+
+Lay_R(osi, tcp)
+Lay_R(opres, tapp)
+
+Rel(osi, oapp, "", $tags="label")
+Rel_(oapp, opres, "", "--")
+Rel_(opres, osess, "", "--")
+Rel_(osess, otrans, "", "--")
+Rel_(otrans, onet, "", "--")
+Rel_(onet, oll, "", "--")
+Rel_(oll, phy, "", "--")
+
+Rel(tcp, tapp, "", $tags="label")
+Rel_(tapp, ttrans, "", "--")
+Rel_(ttrans, tinet, "", "--")
+Rel_(tinet, tna, "", "--")
+Rel_(tna, phy, "", "--")
+
+@enduml
 ```
--->
-![ ](images/layers.png)
 
 ::: notes
 
