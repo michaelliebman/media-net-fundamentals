@@ -120,7 +120,7 @@ The transport layer guarantees that the card makes it into your mom's hands just
 
 ::: notes
 
-25 and 40 Gbit copper standardize, but not marketed.
+25 and 40 Gbit copper standardized, but not marketed.
 
 :::
 
