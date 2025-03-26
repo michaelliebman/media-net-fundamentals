@@ -196,6 +196,9 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 ### Subnets
 
 * A logical division of an IP network
+* Why?
+  * Classical: Limit broadcast domain
+  * Now: Enable the control plane
 * Same most-significant bits = same subnet
 * Original style: Class A through E
 * Now: Classless Inter-Domain Routing (CIDR)
