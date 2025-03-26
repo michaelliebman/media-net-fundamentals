@@ -99,7 +99,7 @@ Transport handles service to service delivery.
 
 What does that mean?
 Think about sending a card to your mom across the country.
-The physical layer are the roads that connect your house to your mother's.
+The physical layer are the roads, sea lanes, and air routes that connect your house to your mother's.
 The LL/network access layer gets your envelope from the mail box to the local post office, from the post office to the distribution center, from the distribution center to the….
 You get the idea.
 The network/Internet layer makes sure the postal service knows the letter is going from you to your mom.
