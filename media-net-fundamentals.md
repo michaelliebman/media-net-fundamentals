@@ -126,8 +126,67 @@ The transport layer guarantees that the card makes it into your mom's hands just
 
 ### Logical Link/Network Access
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 * Frames
-*
+* Rules for using the physical layer
+  * CSMA/CD vs CSMA/CA vs FDM vs TDM
+* Error detection & correction
+* ARP: MAC address ↔ IP address
+
+:::
+::: {.column width="20%"}
+
+```{.plantuml height=1000}
+@startuml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/font-awesome-6/video.puml
+!include $ICONURL/font-awesome-6/microphone.puml
+!include $ICONURL/font-awesome-6/tv.puml
+
+<style>
+nwdiagDiagram {
+  network {
+    BackGroundColor "red"
+  }
+  server {
+    BackGroundColor "#0069c6"
+    FontColor "white"
+  }
+  arrow {
+    FontSize 16
+  }
+}
+</style>
+
+nwdiag {
+  Spine [shape="cloud"];
+  Spine -- rtr;
+  network red{
+    rtr [address = "192.0.2.1, 00‑00‑5E‑00‑53‑00", description = "<color:#ffbd24><$layer_3_switch>\nRouter"];
+    cam [address = "192.0.2.5, 00‑00‑5E‑00‑53‑AF", description = "<color:#ffbd24><$video>\nCamera"];
+    mon [address = "192.0.2.6, 00‑00‑5E‑00‑53‑99", description = "<color:#ffbd24><$tv>\nMonitor"]
+  }
+}
+@enduml
+```
+
+:::
+::::::::::::::
+
+::: notes
+
+<!-- vale write-good.TooWordy["Multiple"] = NO -->
+Error detection primarily in the form of parity bits or checksums.
+Collision Sense Multiple Access/Collision Detection (wired) compared to Collision Avoidance (wireless).
+<!-- vale write-good.TooWordy["Multiple"] = YES -->
+
+:::
 
 ### Network/Internet
 
