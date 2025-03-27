@@ -134,6 +134,10 @@ The transport layer guarantees that the card makes it into your mom's hands just
   * CSMA/CD vs CSMA/CA vs Token Passing vs FDM
 * Error detection & correction
 * ARP: MAC address ↔ IP address
+* MTU: largest frame that can be sent
+  * Original Ethernet: 1500 bytes
+  * Jumbo Frames: 1501-9000 bytes
+  * Super Jumbo Frames: 9001-64,000 bytes
 
 :::
 ::: {.column width="20%"}
