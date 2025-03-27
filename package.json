@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
     "markdownlint-rule-max-one-sentence-per-line": "^0.0.2",
     "mermaid-filter": "^1.4.7"
   }
