@@ -194,6 +194,7 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 
 ### Network/Internet
 
+<!-- TODO: Say something more about RFC 1918 -->
 * Packets
 * RFC 1918
 * Control Plane vs Data Plane
