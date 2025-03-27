@@ -131,7 +131,7 @@ The transport layer guarantees that the card makes it into your mom's hands just
 
 * Frames
 * Rules for using the physical layer
-  * CSMA/CD vs CSMA/CA vs FDM vs TDM
+  * CSMA/CD vs CSMA/CA vs Token Passing vs FDM
 * Error detection & correction
 * ARP: MAC address ↔ IP address
 
