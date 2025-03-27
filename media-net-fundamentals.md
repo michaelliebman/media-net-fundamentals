@@ -127,7 +127,7 @@ The transport layer guarantees that the card makes it into your mom's hands just
 ### Logical Link/Network Access
 
 :::::::::::::: {.columns}
-::: {.column width="50%"}
+::: {.column width="80%"}
 
 * Frames
 * Rules for using the physical layer
