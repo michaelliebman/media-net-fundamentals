@@ -196,6 +196,40 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 
 * Packets
 * RFC 1918
+* Control Plane vs Data Plane
+* Buffer management affects jitter
+* Encapsulation
+* Routing
+  * Link State vs Distance/Path Vector
+  * OSPF vs BGP
+
+```{.mermaid}
+packet-beta
+0-3: "Version"
+4-7: "IHL"
+8-13: "DSCP"
+14-15: "ECN"
+16-31: "Total Length"
+32-47: "Identification"
+48-50: "Flags"
+51-63: "Fragment Offset"
+64-71: "Time to Live"
+72-79: "Protocol"
+80-95: "Header Checksum"
+96-127: "Source Address"
+128-159: "Destination Address"
+```
+
+::: notes
+
+Link state protocols advertise the condition of every connection on a router to all routers in the domain.
+Link state protocols converge quickly but are resource intensive.
+Distance vector protocols share how far a destination is from a router and what the next hop is only with immediate neighbors.
+Path vector share a bit more information.
+DV protocols converge slowly but need less horsepower.
+In other words, DV protocols scale better.
+
+:::
 
 ### Subnets
 
