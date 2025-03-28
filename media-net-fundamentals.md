@@ -318,6 +318,10 @@ end
   * VXLAN
   * ST 2110
 
+![Encapsulation of user data in a UDP stack[^credit-encap]](https://upload.wikimedia.org/wikipedia/commons/3/3b/UDP_encapsulation.svg?download)
+
+[^credit-encap]: By en:User:Cburnett original work, colorization by en:User:Kbrose - Original artwork by en:User:Cburnett, [CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=1546338)
+
 ### DNS
 
 * Numbers are hard for people, names are better
