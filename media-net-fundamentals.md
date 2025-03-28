@@ -309,6 +309,15 @@ end
 :::
 ::::::::::::::
 
+### Encapsulation
+
+* Wrapping higher layer data in lower layers
+* Always part of the TCP/IP model
+* Enables new features
+  * VPN
+  * VXLAN
+  * ST 2110
+
 ### DNS
 
 * Numbers are hard for people, names are better
@@ -569,8 +578,6 @@ Rel(bleaf2, tv, "", $tags="blue")
 
 @enduml
 ```
-
-### VLAN & VXLAN
 
 ### IGMP
 
