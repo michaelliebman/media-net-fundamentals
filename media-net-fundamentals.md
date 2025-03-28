@@ -241,6 +241,7 @@ In other words, DV protocols scale better.
 * Same most-significant bits = same subnet
 * Original style: Class A through E
 * Now: Classless Inter-Domain Routing (CIDR)
+* VLAN: Logically creating subnets with shared physical infrastructure
 
 +-----------------+-------------------------------------------------------+---------------------------------------------------------+
 |                 | /24                                                   | /26                                                     |
