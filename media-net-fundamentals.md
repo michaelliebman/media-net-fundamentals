@@ -34,7 +34,7 @@ monofont: Fira Code
 ### The Protocol Stack
 
 ```{.plantuml width=1600}
-@startuml
+@startuml troubleshooting-model
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
 HIDE_STEREOTYPE()
@@ -143,7 +143,7 @@ The transport layer guarantees that the card makes it into your mom's hands just
 ::: {.column width="20%"}
 
 ```{.plantuml height=1000}
-@startuml
+@startuml ip-mac-addresses
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
 !include CiscoPuml/Icons/all.puml
 
@@ -287,7 +287,7 @@ In other words, DV protocols scale better.
 ::: {.column width="20%"}
 
 ```{.plantuml}
-@startuml
+@startuml tcp-udp-compare
 !pragma teoz true
 
 group TCP
@@ -424,7 +424,7 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 #### Multi Tier
 
 ```{.plantuml}
-@startuml
+@startuml multi-tier-arch
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
 !include CiscoPuml/Icons/all.puml
@@ -454,7 +454,7 @@ BiRel(distr2, acc2, "")
 #### Spine-Leaf
 
 ```{.plantuml}
-@startuml
+@startuml spine-leaf-arch
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
 !include CiscoPuml/Icons/all.puml
@@ -488,7 +488,7 @@ BiRel(spine2, leaf3, "")
 <!-- vale write-good.Passive = YES -->
 
 ```{.plantuml}
-@startuml
+@startuml red-blue
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
 !include CiscoPuml/Icons/all.puml
