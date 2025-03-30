@@ -4,6 +4,7 @@ Bakni
 [hH]itless
 Mellanox
 [mM]ulticast(?:s)?
+[qQ]uerier
 [sS]ubnet(?:ting|s)?
 TLD(?:s)?
 [uU]nicast(?:s)?

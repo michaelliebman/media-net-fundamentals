@@ -621,6 +621,7 @@ Rel(bleaf2, tv, "", $tags="blue")
   * **Any Source Multicast:** (*, 239.1.1.1)
   * **Source Specific Multicast:** (10.1.1.1, 232.1.1.1)
   * **Snooping:** Don't flood to the broadcast domain
+  * **Querier:** Router that sends queries, gets reports, tracks interested hosts & groups
 * Protocol Independent Multicast Sparse Mode (PIM-SM)
   * Doesn't flood traffic where it isn't needed
   * **Rendezvous Point (RP):** Root of tree from senders to receivers
