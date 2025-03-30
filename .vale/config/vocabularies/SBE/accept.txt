@@ -1,3 +1,4 @@
+[aA]nycast(?:ting)?
 Bakni
 [dD]atagram
 [hH]itless

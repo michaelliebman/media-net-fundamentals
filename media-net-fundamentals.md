@@ -257,6 +257,36 @@ In other words, DV protocols scale better.
 | Host Identifier | `00000000.00000000.00000000.10000010` | 0.0.0.130     | `00000000.00000000.00000000.00000010` | 0.0.0.2         |
 +-----------------+---------------------------------------+---------------+---------------------------------------+-----------------+
 
+### Routing Models (Basic)
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+![Broadcast &mdash; 1:Every](https://upload.wikimedia.org/wikipedia/commons/d/dc/Broadcast.svg)
+
+:::
+::: {.column width="50%"}
+
+![Unicast &mdash; 1:1](https://upload.wikimedia.org/wikipedia/commons/7/75/Unicast.svg)
+
+:::
+::::::::::::::
+
+### Routing Models (Media)
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+![Multicast &mdash; 1:Some](https://upload.wikimedia.org/wikipedia/commons/3/30/Multicast.svg)
+
+:::
+::: {.column width="50%"}
+
+![Anycast &mdash; 1:Best](https://upload.wikimedia.org/wikipedia/en/1/18/Anycast-BM.svg)
+
+:::
+::::::::::::::
+
 ### Transport
 
 :::::::::::::: {.columns}
