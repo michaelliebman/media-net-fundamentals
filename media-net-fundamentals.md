@@ -613,7 +613,18 @@ Rel(bleaf2, tv, "", $tags="blue")
 @enduml
 ```
 
-### IGMP
+### Multicast
+
+* Can be L2, most L3 IP Multicast now
+* **Multicast group address:** 239.0.0.0/8
+* Internet Group Management Protocol (IGMP)
+  * **Any Source Multicast:** (*, 239.1.1.1)
+  * **Source Specific Multicast:** (10.1.1.1, 232.1.1.1)
+  * **Snooping:** Don't flood to the broadcast domain
+* Protocol Independent Multicast Sparse Mode (PIM-SM)
+  * Doesn't flood traffic where it isn't needed
+  * **Rendezvous Point (RP):** Root of tree from senders to receivers
+  * **Designated Router (DR):** Join/prune to RP & forwarding for subnet
 
 ### Software Defined Networking
 
