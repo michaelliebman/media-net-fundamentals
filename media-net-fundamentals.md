@@ -627,7 +627,120 @@ Rel(bleaf2, tv, "", $tags="blue")
   * **Rendezvous Point (RP):** Root of tree from senders to receivers
   * **Designated Router (DR):** Join/prune to RP & forwarding for subnet
 
-### Software Defined Networking
+### Software Defined Networking: The Problem
+
+* Internet designed for distributed resiliency
+* Slow Control Plane
+* STP, RSTP, LACP, MLAG, VLAN, VXLAN…
+
+```{.plantuml}
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/font-awesome-6/video.puml
+!include $ICONURL/font-awesome-6/microphone.puml
+!include $ICONURL/font-awesome-6/tv.puml
+
+UpdateElementStyle("system", $bgColor=white, $fontColor=#ffbd24, $borderColor=white)
+UpdateElementStyle("container", $bgColor=#0069c6, $fontColor=white)
+UpdateRelStyle(black, black)
+AddElementTag("red", $fontColor=red)
+AddElementTag("blue", $fontColor=#0069c6)
+AddElementTag("purple", $fontColor=purple)
+AddRelTag("red", $lineColor=red)
+AddRelTag("blue", $lineColor=#0069c6)
+AddRelTag("purple", $lineColor=purple)
+
+HIDE_STEREOTYPE()
+LAYOUT_LEFT_RIGHT()
+
+System(camera, "", $sprite=video)
+System(tv, "", $sprite=tv)
+
+System_Boundary(l1, "Leaf 1"){
+  Container(l1c, "Routing & Switching Algorithms", $sprite=route_switch_processor)
+  Container(l1d, "Switch Fabric", $sprite=programmable_sw)
+}
+System_Boundary(s1, "Spine 1"){
+  Container(s1c, "Routing & Switching Algorithms", $sprite=route_switch_processor)
+  Container(s1d, "Switch Fabric", $sprite=programmable_sw)
+}
+System_Boundary(l2, "Leaf 2"){
+  Container(l2c, "Routing & Switching Algorithms", $sprite=route_switch_processor)
+  Container(l2d, "Switch Fabric", $sprite=programmable_sw)
+}
+
+Rel_R(l1c, l1d, "")
+Rel_R(s1c, s1d, "")
+Rel_R(l2c, l2d, "")
+
+Rel_D(camera, l1d, "")
+Rel(l1d, s1d, "")
+Rel(s1d, l2d, "")
+Rel(l2d, tv, "")
+
+BiRel(l1c, s1c, "")
+BiRel(s1c, l2c, "")
+BiRel(l1c, l2c, "")
+
+@enduml
+```
+
+### Software Defined Networking: The Solution
+
+```{.plantuml}
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define CiscoPuml https://raw.githubusercontent.com/Julien-cpsn/plantuml-cisco-icons/master
+!include CiscoPuml/Icons/all.puml
+
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/font-awesome-6/video.puml
+!include $ICONURL/font-awesome-6/microphone.puml
+!include $ICONURL/font-awesome-6/tv.puml
+!include $ICONURL/font-awesome-6/tower_broadcast.puml
+
+UpdateElementStyle("system", $bgColor=white, $fontColor=#ffbd24, $borderColor=white)
+UpdateElementStyle("container", $bgColor=#0069c6, $fontColor=white)
+UpdateRelStyle(black, black)
+AddElementTag("red", $fontColor=red)
+AddElementTag("blue", $fontColor=#0069c6)
+AddElementTag("purple", $fontColor=purple)
+AddContainerTag("hidden", $fontColor=white, $bgColor=white, $borderColor=white)
+AddRelTag("red", $lineColor=red)
+AddRelTag("blue", $lineColor=#0069c6)
+AddRelTag("purple", $lineColor=purple)
+
+HIDE_STEREOTYPE()
+LAYOUT_LEFT_RIGHT()
+
+System(camera, "", $sprite=video)
+System(tv, "", $sprite=tv)
+
+Container(bc, "Broadcast Controller", $sprite=tower_broadcast)
+Container(algo, "Network Controller", $sprite=route_switch_processor)
+
+Container(l1d, "Leaf 1", $sprite=programmable_sw)
+Container(s1d, "Spine 1", $sprite=programmable_sw)
+Container(l2d, "Leaf 2", $sprite=programmable_sw)
+
+Rel_D(camera, l1d, "")
+Rel_D(l1d, s1d, "")
+Rel_D(s1d, l2d, "")
+Rel_D(l2d, tv, "")
+
+Rel_R(algo, s1d, "")
+Rel_R(algo, l2d, "")
+Rel_L(algo, l1d, "")
+Rel_R(bc, algo, "")
+
+@enduml
+```
 
 ## Architecture Guidance
 
