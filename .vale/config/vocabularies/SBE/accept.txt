@@ -1,0 +1,15 @@
+[aA]nycast(?:ting)?
+Bakni
+[dD]atagram
+[hH]itless
+Mellanox
+[mM]ulticast(?:s)?
+[qQ]uerier
+[sS]ubnet(?:ting|s)?
+TLD(?:s)?
+[uU]nicast(?:s)?
+[uU]ntrusted
+Wikimedia
+Wikipedia
+
+[kMGTPEZYRQ]bit

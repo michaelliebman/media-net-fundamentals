@@ -1,0 +1,12 @@
+{
+  "default": true,
+  "whitespace": false,
+  "line_length": false,
+  "ul-indent": false,
+  "no-inline-html": false,
+  "no-bare-urls": false,
+  "fenced-code-language": false,
+  "first-line-h1": false,
+  "single-h1": false,
+  "max-one-sentence-per-line": true
+}

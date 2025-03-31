@@ -134,3 +134,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Vale
+.vale/alex
+.vale/proselint
+.vale/write-good
+
+# LibreOffice
+.~lock.*#
+
+# Plantuml
+plantuml-images/
