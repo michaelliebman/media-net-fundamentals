@@ -22,8 +22,6 @@ monofont: Fira Code
 * Consumer/last mile technology
 * Much, much more
 
-## The Fundamentals
-
 ### What is an MoIP network?
 
 * A group or system of interconnected things
@@ -490,8 +488,6 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 :::
 ::::::::::::::
 
-## MoIP Essentials
-
 ### ST 2110 in 60 Seconds
 
 :::::::::::::: {.columns}
@@ -804,8 +800,6 @@ Rel_R(bc, algo, "")
 
 @enduml
 ```
-
-## Architecture Guidance
 
 ### Documentation
 
