@@ -136,7 +136,7 @@ The transport layer guarantees that the card makes it into your mom's hands just
 :::::::::::::: {.columns}
 ::: {.column width="80%"}
 
-* Frames
+* Moves **frames** from **hop to hop**
 * Rules for using the physical layer
   * CSMA/CD vs CSMA/CA vs Token Passing vs FDM
 * Error detection & correction
@@ -205,7 +205,7 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 ::: {.column width="50%"}
 
 <!-- TODO: Say something more about RFC 1918 -->
-* Packets
+* Moves **packets** from **end to end**
 * RFC 1918
 * Control Plane vs Data Plane
 * Buffer management affects jitter
@@ -317,7 +317,7 @@ In other words, DV protocols scale better.
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-* Segments
+* Moves **segments** from **service to service**
 * Logical communication between processes
 * *Your* letter carrier
 * Identified by port numbers
