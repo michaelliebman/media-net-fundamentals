@@ -768,7 +768,12 @@ Spreadsheets aren't databases.
 ### Define Requirements
 
 * Hitless means different things to different people
-* Increased redundancy reduces reliability
+  * Video: 1 frame 🚫
+  * Audio: < 10ms ✔, 10-100 ms ?, > 100 ms 🚫
+* Trade offs: Reliability, Resiliency, Scalability, Complexity
+* Standards-based vs proprietary
+* Make before break or break before make?
+
 
 ### Compare Options
 
