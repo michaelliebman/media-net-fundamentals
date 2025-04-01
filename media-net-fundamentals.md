@@ -202,6 +202,9 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 
 ### Network/Internet
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 <!-- TODO: Say something more about RFC 1918 -->
 * Packets
 * RFC 1918
@@ -211,6 +214,9 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 * Routing
   * Link State vs Distance/Path Vector
   * OSPF vs BGP
+
+:::
+::: {.column width="50%"}
 
 ```{.mermaid}
 packet-beta
@@ -229,6 +235,9 @@ packet-beta
 128-159: "Destination Address"
 ```
 
+:::
+::::::::::::::
+
 ::: notes
 
 Link state protocols advertise the condition of every connection on a router to all routers in the domain.
@@ -242,6 +251,9 @@ In other words, DV protocols scale better.
 
 ### Subnets
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 * A logical division of an IP network
 * Why?
   * Classical: Limit broadcast domain
@@ -250,6 +262,9 @@ In other words, DV protocols scale better.
 * Original style: Class A through E
 * Now: Classless Inter-Domain Routing (CIDR)
 * VLAN: Logically creating subnets with shared physical infrastructure
+
+:::
+::: {.column width="50%"}
 
 +-----------------+-------------------------------------------------------+---------------------------------------------------------+
 |                 | /24                                                   | /26                                                     |
@@ -264,6 +279,9 @@ In other words, DV protocols scale better.
 +-----------------+---------------------------------------+---------------+---------------------------------------+-----------------+
 | Host Identifier | `00000000.00000000.00000000.10000010` | 0.0.0.130     | `00000000.00000000.00000000.00000010` | 0.0.0.2         |
 +-----------------+---------------------------------------+---------------+---------------------------------------+-----------------+
+
+:::
+::::::::::::::
 
 ### Routing Models (Basic)
 
@@ -367,6 +385,9 @@ end
 
 ### Encapsulation
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 * Wrapping higher layer data in lower layers
 * Always part of the TCP/IP model
 * Enables new features
@@ -374,9 +395,15 @@ end
   * VXLAN
   * ST 2110
 
+:::
+::: {.column width="50%"}
+
 ![Encapsulation of user data in a UDP stack[^credit-encap]](https://upload.wikimedia.org/wikipedia/commons/3/3b/UDP_encapsulation.svg?download)
 
 [^credit-encap]: By en:User:Cburnett original work, colorization by en:User:Kbrose - Original artwork by en:User:Cburnett, [CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=1546338)
+
+:::
+::::::::::::::
 
 ### DNS
 
