@@ -298,7 +298,7 @@ In other words, DV protocols scale better.
 ### Transport
 
 :::::::::::::: {.columns}
-::: {.column width="80%"}
+::: {.column width="50%"}
 
 * Segments
 * Logical communication between processes
@@ -306,6 +306,24 @@ In other words, DV protocols scale better.
 * Identified by port numbers
   * 1-1023: "Well known" services
   * 1024-65535: Everything else
+
+:::
+::: {.column width="50%"}
+
+![[^credit-post]](https://images.unsplash.com/photo-1585854142856-39397c7d3704 "Title: A USPS Letter Carrier")
+
+<!-- vale Vale.Spelling["Haupt"] = NO -->
+<!-- vale alex.ProfanityMaybe["Mick"] = NO -->
+[^credit-post]: Photo by [Mick Haupt](https://unsplash.com/@rocinante_11) [Unsplash](https://unsplash.com/photos/man-in-blue-dress-shirt-sitting-on-white-and-blue-bus-during-daytime-fVzrhGkLLaY)
+
+:::
+::::::::::::::
+
+### TCP & UDP
+
+:::::::::::::: {.columns}
+::: {.column width="80%"}
+
 * Transmission Control Protocol (TCP)
   * Connection-oriented
   * Error checking
