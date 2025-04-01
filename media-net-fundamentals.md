@@ -767,8 +767,31 @@ Spreadsheets aren't databases.
 
 ### Define Requirements
 
-* Hitless means different things to different people
-* Increased redundancy reduces reliability
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+* Hitless?
+  * Video: 1 frame 🚫
+  * Audio: < 10ms ✔, 10-100 ms ?, > 100 ms 🚫
+* Trade offs: Reliability, Resiliency, Scalability, Complexity
+* Standards-based vs proprietary
+* Make before break or break before make?
+
+:::
+::: {.column width="50%"}
+
+![I see meetings in your future[^credit-req]](https://images.unsplash.com/photo-1552664688-cf412ec27db2 "Title: Person looking at sticky notes")
+
+[^credit-req]: Photo by [Jason Goodman](https://unsplash.com/@jasongoodman_youxventures) on [Unsplash](https://unsplash.com/photos/paper-on-wall-m2TU2gfqSeE)
+
+:::
+::::::::::::::
+
+::: notes
+
+Increasing redundancy reduces reliability.
+
+:::
 
 ### Compare Options
 
