@@ -13,3 +13,4 @@ Wikimedia
 Wikipedia
 
 [kMGTPEZYRQ]bit
+[kMGTPEZYRQ]bps
