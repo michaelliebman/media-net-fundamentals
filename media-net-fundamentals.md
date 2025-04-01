@@ -1,5 +1,6 @@
 ---
-title: Network Fundamentals With an Eye to Media and Streaming Requirements
+title: Network Fundamentals
+subtitle: With an Eye to Media and Streaming Requirements
 author: Michael S. Liebman, CEV, CBNT
 institute: SiriusXM
 date: April 4, 2025
