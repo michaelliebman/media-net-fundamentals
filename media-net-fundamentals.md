@@ -209,7 +209,6 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 * RFC 1918
 * Control Plane vs Data Plane
 * Buffer management affects jitter
-* Encapsulation
 * Routing
   * Link State vs Distance/Path Vector
   * OSPF vs BGP
