@@ -682,9 +682,15 @@ Rel(bleaf2, tv, "", $tags="blue")
 
 ### Software Defined Networking: The Problem
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
 * Internet designed for distributed resiliency
 * Slow Control Plane
 * STP, RSTP, LACP, MLAG, VLAN, VXLAN…
+
+:::
+::: {.column width="50%"}
 
 ```{.plantuml}
 @startuml
@@ -742,6 +748,9 @@ BiRel(l1c, l2c, "")
 
 @enduml
 ```
+
+:::
+::::::::::::::
 
 ### Software Defined Networking: The Solution
 
