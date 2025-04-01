@@ -17,6 +17,7 @@ monofont: Fira Code
 
 #### What *aren't* we going to cover?
 
+* IPv6
 * Cisco, Arista, Mellanox, &lt;*insert switch vendor here*&gt; configuration
 * Step-by-step for *your* network
 * Consumer/last mile technology
