@@ -1,5 +1,6 @@
 ---
-title: Network Fundamentals With an Eye to Media and Streaming Requirements
+title: Network Fundamentals
+subtitle: With an Eye to Media and Streaming Requirements
 author: Michael S. Liebman, CEV, CBNT
 institute: SiriusXM
 date: April 4, 2025
@@ -20,8 +21,6 @@ monofont: Fira Code
 * Step-by-step for *your* network
 * Consumer/last mile technology
 * Much, much more
-
-## The Fundamentals
 
 ### What is an MoIP network?
 
@@ -489,8 +488,6 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 :::
 ::::::::::::::
 
-## MoIP Essentials
-
 ### ST 2110 in 60 Seconds
 
 :::::::::::::: {.columns}
@@ -803,8 +800,6 @@ Rel_R(bc, algo, "")
 
 @enduml
 ```
-
-## Architecture Guidance
 
 ### Documentation
 
