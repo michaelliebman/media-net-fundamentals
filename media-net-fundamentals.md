@@ -770,7 +770,7 @@ Spreadsheets aren't databases.
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-* Hitless means different things to different people
+* Hitless?
   * Video: 1 frame 🚫
   * Audio: < 10ms ✔, 10-100 ms ?, > 100 ms 🚫
 * Trade offs: Reliability, Resiliency, Scalability, Complexity
