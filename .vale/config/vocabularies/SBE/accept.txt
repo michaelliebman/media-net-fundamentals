@@ -9,6 +9,7 @@ Mellanox
 TLD(?:s)?
 [uU]nicast(?:s)?
 [uU]ntrusted
+Unsplash
 Wikimedia
 Wikipedia
 
