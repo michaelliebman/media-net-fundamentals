@@ -109,14 +109,22 @@ The transport layer guarantees that the card makes it into your mom's hands just
 
 ### Physical Layer
 
-* Copper
-  * 1, 2.5, 5, & 10 Gbit
-  * Higher bit rate = higher CAT cable
-  * Higher bit rate = higher termination quality
-* Fiber
-  * 10, 25, 40, 100 Gbit and up
-  * Select optics and cable carefully
-  *
+* Wired
+  * Copper
+    * 1, 2.5, 5, & 10 Gbps
+    * Higher bit rate = higher CAT cable
+    * Higher bit rate = higher termination quality
+  * Fiber
+    * 10, 25, 40, 100 Gbps and up
+    * Select optics and cable carefully
+* Wireless
+  * WiFi
+    * 2.4 GHz (3 non-overlapping), 5 GHz (23 non-overlapping), 6 GHz
+    * 6/6E: 9.5 Gbps, 7: 23 Gbps
+  * Mobile
+    * 4G: 5 to 100 Mbps (300 Mbps), 30-50 ms
+    * 5G: 50 Mbps to 2 Gbps (20 Gbps), 1 ms
+    * Bonded or [5G Private](https://www.bbc.co.uk/rd/blog/2023-05-5g-non-public-network-coronation)
 
 ::: notes
 
