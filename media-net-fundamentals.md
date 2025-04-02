@@ -286,12 +286,12 @@ In other words, DV protocols scale better.
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-![Broadcast &mdash; 1:Every](https://upload.wikimedia.org/wikipedia/commons/d/dc/Broadcast.svg)
+![Broadcast &mdash; 1:Every](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/1080px-Broadcast.svg.png)
 
 :::
 ::: {.column width="50%"}
 
-![Unicast &mdash; 1:1](https://upload.wikimedia.org/wikipedia/commons/7/75/Unicast.svg)
+![Unicast &mdash; 1:1](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Unicast.svg/1080px-Unicast.svg.png)
 
 :::
 ::::::::::::::
@@ -301,12 +301,12 @@ In other words, DV protocols scale better.
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-![Multicast &mdash; 1:Some](https://upload.wikimedia.org/wikipedia/commons/3/30/Multicast.svg)
+![Multicast &mdash; 1:Some](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Multicast.svg/1080px-Multicast.svg.png)
 
 :::
 ::: {.column width="50%"}
 
-![Anycast &mdash; 1:Best](https://upload.wikimedia.org/wikipedia/en/1/18/Anycast-BM.svg)
+![Anycast &mdash; 1:Best](https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Anycast-BM.svg/1080px-Anycast-BM.svg.png)
 
 :::
 ::::::::::::::
@@ -396,7 +396,7 @@ end
 :::
 ::: {.column width="50%"}
 
-![Encapsulation of user data in a UDP stack[^credit-encap]](https://upload.wikimedia.org/wikipedia/commons/3/3b/UDP_encapsulation.svg?download)
+![Encapsulation of user data in a UDP stack[^credit-encap]](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/800px-UDP_encapsulation.svg.png)
 
 [^credit-encap]: By en:User:Cburnett original work, colorization by en:User:Kbrose - Original artwork by en:User:Cburnett, [CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=1546338)
 
@@ -481,7 +481,7 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 :::
 ::: {.column width="50%"}
 
-![Network address translation between a private network and the Internet[^credit-nat]](https://upload.wikimedia.org/wikipedia/commons/c/c7/NAT_Concept-en.svg)
+![Network address translation between a private network and the Internet[^credit-nat]](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/NAT_Concept-en.svg/456px-NAT_Concept-en.svg.png)
 
 [^credit-nat]: Michel Bakni, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
 
