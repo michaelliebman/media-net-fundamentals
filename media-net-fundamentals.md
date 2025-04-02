@@ -17,6 +17,7 @@ monofont: Fira Code
 
 #### What *aren't* we going to cover?
 
+* IPv6
 * Cisco, Arista, Mellanox, &lt;*insert switch vendor here*&gt; configuration
 * Step-by-step for *your* network
 * Consumer/last mile technology
@@ -204,12 +205,10 @@ Collision Sense Multiple Access/Collision Detection (wired) compared to Collisio
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-<!-- TODO: Say something more about RFC 1918 -->
 * Moves **packets** from **end to end**
-* RFC 1918
+* RFC 1918: 10.0.0.8/8, 172.16.0.0/12, 192.168.0.0/16
 * Control Plane vs Data Plane
 * Buffer management affects jitter
-* Encapsulation
 * Routing
   * Link State vs Distance/Path Vector
   * OSPF vs BGP
@@ -430,6 +429,7 @@ end
 * Client requests a *lease*, automatically renews
 * Release & renew manually for troubleshooting
 * *Options* let you configure more than just address
+* 169.254.0.0/16 is *link local*
 
 :::
 ::: {.column width="50%"}
@@ -476,7 +476,7 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 * Often RFC1918 to/from public
 * Basic/one-to-one: Just rewrite addresses
 * One-to-many: Rewrite addresses and port numbers
-* Watch out for CGNAT and double NAT
+* Watch out for CGNAT (100.64.0.0/10) and double NAT
 
 :::
 ::: {.column width="50%"}
