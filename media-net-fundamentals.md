@@ -881,3 +881,11 @@ Increasing redundancy reduces reliability.
 This is part of the analysis SiriusXM used to rank network architecture options.
 
 :::
+
+### Where next?
+
+<!-- markdownlint-disable max-one-sentence-per-line -->
+* **Study:** [J. F. Kurose and K. W. Ross, Computer networking: A top-down approach, Eighth edition. Hoboken: Pearson, 2021.](https://gaia.cs.umass.edu/kurose_ross/index.php)
+* **Practice:** Use [GNS3](https://www.gns3.com/) or [EVE-NG](https://www.eve-ng.net/) for hands-on lab time
+* **Fix:** Troubleshooting MoIP [https://www.broadtechsm.com/guides/troubleshooting-moip/](https://www.broadtechsm.com/guides/troubleshooting-moip/)
+<!-- markdownlint-enable max-one-sentence-per-line -->

@@ -2,6 +2,7 @@
 Bakni
 [dD]atagram
 [hH]itless
+Kurose
 Mellanox
 [mM]ulticast(?:s)?
 [qQ]uerier
