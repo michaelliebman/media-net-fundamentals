@@ -710,6 +710,10 @@ Rel(bleaf2, tv, "", $tags="blue")
   * Doesn't flood traffic where it isn't needed at scale
   * **Rendezvous Point (RP):** Root of tree from senders to receivers
   * **Designated Router (DR):** Join/prune to RP & forwarding for subnet
+* EVPN Optimized Inter-Subnet Multicast (OISM)
+  * One subnet, many locations with an overlay
+  * Enables "portability" of multicast
+  * Complex to configure & understand: EVPN, BGP, VXLAN, BULL, OIL, VTEP…
 
 ### Software Defined Networking: The Problem
 
