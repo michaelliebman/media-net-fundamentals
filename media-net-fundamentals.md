@@ -509,6 +509,40 @@ For example, extended Berkeley Packet Filters (eBPF) safely extends kernel funct
 :::
 ::::::::::::::
 
+### Time
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+* TAI vs UTC vs UT0 vs UT1 vs GPS
+  * No more leap seconds as of 2035
+* Network Time Protocol (NTP)
+  * Millisecond accuracy
+  * Defaults to slewing in corrections
+  * Clocks divided into strata
+  * Needs 1, 2 with a preferred, or 3+ servers
+* Precision Time Protocol (PTPv2)
+  * Nanosecond accuracy
+  <!-- vale alex.Race["Master"] = NO -->
+  * Best Master Clock Algorithm (BMCA)
+    * P1, Class, P2
+  * Leader, Follower, Transmitter, Receiver
+  * Boundary Clock (BC), Transparent Clock (TC)
+  * Domain, Announce Interval, Sync Interval
+  <!-- vale alex.Race["Master"] = YES -->
+
+
+:::
+::: {.column width="50%"}
+
+![[^credit-time]](https://unsplash.com/photos/yBzrPGLjMQw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQzNjQxMDM5fA&force=true)
+
+<!-- vale Vale.Spelling["Zabriskie"] = NO -->
+[^credit-time]: Photo by [Heather Zabriskie ](https://unsplash.com/@heatherz) [Unsplash](https://unsplash.com/photos/vintage-brown-and-white-watch-lot-yBzrPGLjMQw)
+
+:::
+::::::::::::::
+
 ### Network Architectures
 
 :::::::::::::: {.columns}
