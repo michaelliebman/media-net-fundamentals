@@ -1,6 +1,6 @@
   repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
@@ -13,24 +13,24 @@
       - id: detect-private-key
       - id: no-commit-to-branch
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.22.0
+    rev: v9.23.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.17.2
+    rev: v0.20.0
     hooks:
       - id: markdownlint-cli2
         additional_dependencies: ["markdownlint-rule-max-one-sentence-per-line"]
   - repo: https://github.com/sirosen/texthooks
-    rev: 0.6.8
+    rev: 0.7.1
     hooks:
       - id: fix-smartquotes
       - id: fix-ligatures
       - id: fix-spaces
   - repo: https://github.com/errata-ai/vale
-    rev: v3.10.0
+    rev: v3.13.0
     hooks:
       - id: vale
         name: vale sync
