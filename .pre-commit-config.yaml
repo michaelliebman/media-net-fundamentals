@@ -13,13 +13,13 @@
       - id: detect-private-key
       - id: no-commit-to-branch
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.23.0
+    rev: v9.24.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.20.0
+    rev: v0.22.0
     hooks:
       - id: markdownlint-cli2
         additional_dependencies: ["markdownlint-rule-max-one-sentence-per-line"]
@@ -30,7 +30,7 @@
       - id: fix-ligatures
       - id: fix-spaces
   - repo: https://github.com/errata-ai/vale
-    rev: v3.13.0
+    rev: v3.14.1
     hooks:
       - id: vale
         name: vale sync
