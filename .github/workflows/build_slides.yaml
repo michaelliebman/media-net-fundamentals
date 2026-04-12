@@ -49,7 +49,7 @@ jobs:
             -o ./media-net-fundamentals.pptx
       - name: Breakpoint if tests failed
         if: failure()
-        uses: namespacelabs/breakpoint-action@v0
+        uses: namespacelabs/breakpoint-action@3aae7a13f0a57f433e694fddb74a1a05abeb9b99 # v0.0.15
         with:
           duration: 30m
           authorized-users: michaelliebman
