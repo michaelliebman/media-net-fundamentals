@@ -4,29 +4,42 @@ on:
   pull_request:
     types: [opened, edited, reopened, synchronize]
 
+permissions: {}
+
 jobs:
   pre-commit:
     name: Run pre-commit
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          python-version: 3.14
-      - uses: pre-commit/action@v3.0.1
+          persist-credentials: false
+      - uses: j178/prek-action@53276d8b0d10f8b6672aa85b4588c6921d0370cc # v2.0.1
   convert_via_pandoc:
     name: Convert via pandoc
     needs: pre-commit
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
         with:
           node-version: 21
           cache: npm
           cache-dependency-path: package-lock.json
       - run: npm ci
-      - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-pandoc@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
           pandoc-version: 3.1.11
       - run: |
@@ -49,7 +62,7 @@ jobs:
             -o ./media-net-fundamentals.pptx
       - name: Breakpoint if tests failed
         if: failure()
-        uses: namespacelabs/breakpoint-action@v0
+        uses: namespacelabs/breakpoint-action@3aae7a13f0a57f433e694fddb74a1a05abeb9b99 # v0.0.15
         with:
           duration: 30m
           authorized-users: michaelliebman

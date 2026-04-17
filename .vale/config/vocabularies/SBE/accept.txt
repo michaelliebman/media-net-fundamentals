@@ -6,6 +6,7 @@ Kurose
 Mellanox
 [mM]ulticast(?:s)?
 [qQ]uerier
+prek
 [sS]ubnet(?:ting|s)?
 TLD(?:s)?
 [uU]nicast(?:s)?
