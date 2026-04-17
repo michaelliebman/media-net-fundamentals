@@ -5,5 +5,8 @@
     "mergeConfidence:all-badges",
     ":automergeMinor",
     "schedule:automergeEarlyMondays"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
